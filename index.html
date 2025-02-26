@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人主页</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/snowfall.js"></script>
 </head>
 <body>
     <div class="container">
@@ -36,6 +37,7 @@
             <h2>博客</h2>
             <p>以下是我近期写的技术博客，欢迎阅读！</p>
             <ul class="blog-list">
+                <!-- Blog items will go here, added dynamically if necessary -->
                 <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456789" class="blog-item">
                         <div class="blog-item-content">
                             <h3>如何优化Android应用的启动速度</h3>
@@ -44,80 +46,36 @@
                         </div>
                     </a>
                 </li>
-                <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456788" class="blog-item">
-                        <div class="blog-item-content">
-                            <h3>Kotlin协程深入解析</h3>
-                            <p>本文深入讲解了Kotlin中的协程，分析了协程的工作原理，并结合实际案例介绍了如何高效地使用协程...</p>
-                            <span class="blog-time">2025-02-20</span>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456787" class="blog-item">
-                        <div class="blog-item-content">
-                            <h3>Android中RecyclerView的优化技巧</h3>
-                            <p>介绍了RecyclerView常见的性能问题，并给出了优化的方案，特别是在大数据量的情况下...</p>
-                            <span class="blog-time">2025-02-15</span>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456786" class="blog-item">
-                        <div class="blog-item-content">
-                            <h3>理解Android中的ViewGroup和View的区别</h3>
-                            <p>本文详细解析了Android中的View和ViewGroup的区别，以及它们各自的职责和作用...</p>
-                            <span class="blog-time">2025-02-10</span>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456785" class="blog-item">
-                        <div class="blog-item-content">
-                            <h3>如何使用Jetpack Compose构建Android UI</h3>
-                            <p>本文介绍了Jetpack Compose的基础知识，如何使用它构建现代化的Android UI，并结合代码示例讲解如何实现...</p>
-                            <span class="blog-time">2025-02-05</span>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456784" class="blog-item">
-                        <div class="blog-item-content">
-                            <h3>深入浅出Android中的内存泄漏问题</h3>
-                            <p>本文介绍了Android中的内存泄漏问题，分析了常见的泄漏场景，并给出了相应的解决方案...</p>
-                            <span class="blog-time">2025-01-30</span>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456783" class="blog-item">
-                        <div class="blog-item-content">
-                            <h3>Kotlin扩展函数的使用技巧</h3>
-                            <p>本文介绍了Kotlin扩展函数的基础使用，如何简化代码，并给出了一些实用的扩展函数示例...</p>
-                            <span class="blog-time">2025-01-25</span>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456782" class="blog-item">
-                        <div class="blog-item-content">
-                            <h3>Android中的布局优化实践</h3>
-                            <p>本文通过一些常见的布局优化技巧，帮助提升Android应用的UI渲染效率和流畅度...</p>
-                            <span class="blog-time">2025-01-20</span>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456781" class="blog-item">
-                        <div class="blog-item-content">
-                            <h3>掌握Android的权限管理机制</h3>
-                            <p>本文详细介绍了Android中的权限管理机制，讲解了如何申请权限、处理用户拒绝权限等问题...</p>
-                            <span class="blog-time">2025-01-15</span>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456780" class="blog-item">
-                        <div class="blog-item-content">
-                            <h3>Android中的线程与异步编程</h3>
-                            <p>本文讲解了Android中的线程管理和异步编程，包括Handler、AsyncTask等的使用...</p>
-                            <span class="blog-time">2025-01-10</span>
-                        </div>
-                    </a>
-                </li>
+                <!-- Add more blog entries here -->
             </ul>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="prev-page" onclick="changePage(-1)">上一页</button>
+                <button class="next-page" onclick="changePage(1)">下一页</button>
+            </div>
         </section>
     </div>
+
+    <script>
+        // Initialize snowflake effect for mouse hover on blog items
+        document.querySelectorAll('.blog-item').forEach(function (item) {
+            item.addEventListener('mouseenter', function () {
+                snowfall.start({ minSize: 10, maxSize: 30, flakeCount: 50 });
+            });
+            item.addEventListener('mouseleave', function () {
+                snowfall.stop();
+            });
+        });
+
+        // Pagination JavaScript
+        let currentPage = 1;
+        const itemsPerPage = 10;
+
+        function changePage(direction) {
+            currentPage += direction;
+            // Update the displayed items here based on currentPage and itemsPerPage
+        }
+    </script>
 </body>
 </html>
