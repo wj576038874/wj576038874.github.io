@@ -36,8 +36,8 @@ email: 'wenjie940409@gmail.com'
 messenger: 'myfbchat'
 jianshu: 'u/64e2d0feed09'
 
-# social-links-order: [github-user, blog_url, jianshu, facebook, twitter, email]
-social-links-order: [github-user, blog_url, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, email]
+social-links-order: [github-user, blog_url, jianshu, facebook, twitter, email]
+# social-links-order: [github-user, blog_url, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, email]
 
 # Yaml manifest of supported social links
 # Requirements:
@@ -61,7 +61,7 @@ social-links-order: [github-user, blog_url, facebook, twitter, instagram, tumblr
 social-links:
   - name: jianshu
     url-pattern: www.jianshu.com/__USERNAME__
-    icon-class: fab fa-2x fa-book-open
+    icon-class: fab fa-2x fa-book
 
   - name: facebook
     url-pattern: facebook.com/__USERNAME__
