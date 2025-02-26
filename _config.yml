@@ -36,7 +36,7 @@ email: 'wenjie940409@gmail.com'
 messenger: 'myfbchat'
 book: 'u/64e2d0feed09'
 
-social-links-order: [github-user, blog_url, book, facebook, twitter, email, reddit, lastfm, codepen, pinterest, dribbble, medium, soundcloud]
+social-links-order: [github-user, blog_url, book, facebook, twitter, email]
 # social-links-order: [github-user, blog_url, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, email]
 
 # Yaml manifest of supported social links
