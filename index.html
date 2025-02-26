@@ -1,81 +1,8 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/snowfall.js"></script>
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="profile">
-                <img src="https://avatars.githubusercontent.com/u/16681210?s=96&v=4" alt="头像" class="profile-image">
-                <div class="profile-info">
-                    <h1>可口不可乐</h1>
-                    <p class="job-title">Android开发工程师</p>
-                    <p class="signature">"追求技术的极致，永远不停下脚步"</p>
-                </div>
-            </div>
-        </header>
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-        <section class="about">
-            <h2>简介</h2>
-            <p>我是一个热爱技术的开发者，致力于用最简洁高效的方式解决问题。擅长Android开发，熟悉Kotlin和Java，深信技术是解决一切问题的钥匙。</p>
-        </section>
-
-        <section class="contact">
-            <h2>联系方式</h2>
-            <ul>
-                <li><strong>邮箱：</strong><a href="mailto:your-email@example.com">your-email@example.com</a></li>
-                <li><strong>GitHub：</strong><a href="https://github.com/your-github" target="_blank">https://github.com/your-github</a></li>
-            </ul>
-        </section>
-
-        <section class="blog">
-            <h2>博客</h2>
-            <p>以下是我近期写的技术博客，欢迎阅读！</p>
-            <ul class="blog-list">
-                <!-- Blog items will go here, added dynamically if necessary -->
-                <li><a href="https://blog.csdn.net/csdn576038874/article/details/123456789" class="blog-item">
-                        <div class="blog-item-content">
-                            <h3>如何优化Android应用的启动速度</h3>
-                            <p>本文介绍了如何通过各种手段优化Android应用的启动速度，包括减少启动时的I/O操作、使用合适的布局和资源加载方式等...</p>
-                            <span class="blog-time">2025-02-26</span>
-                        </div>
-                    </a>
-                </li>
-                <!-- Add more blog entries here -->
-            </ul>
-
-            <!-- Pagination -->
-            <div class="pagination">
-                <button class="prev-page" onclick="changePage(-1)">上一页</button>
-                <button class="next-page" onclick="changePage(1)">下一页</button>
-            </div>
-        </section>
-    </div>
-
-    <script>
-        // Initialize snowflake effect for mouse hover on blog items
-        document.querySelectorAll('.blog-item').forEach(function (item) {
-            item.addEventListener('mouseenter', function () {
-                snowfall.start({ minSize: 10, maxSize: 30, flakeCount: 50 });
-            });
-            item.addEventListener('mouseleave', function () {
-                snowfall.stop();
-            });
-        });
-
-        // Pagination JavaScript
-        let currentPage = 1;
-        const itemsPerPage = 10;
-
-        function changePage(direction) {
-            currentPage += direction;
-            // Update the displayed items here based on currentPage and itemsPerPage
-        }
-    </script>
-</body>
-</html>
+layout: home
+title: Home
+banner: "/assets/images/banners/home.jpeg"
+---
