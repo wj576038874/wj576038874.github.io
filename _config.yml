@@ -2,8 +2,8 @@
 remote_theme: epidrome/cover-card@main
 
 # Title and tag line
-title: 'My name'
-description: 'I am amazing.'
+title: 'wychen'
+description: 'I am wenjie.'
 
 # Images
 avatar: 'avatar.jpg'
@@ -18,7 +18,7 @@ twitter: 'mytwitter'
 instagram: 'myinsta'
 #pinterest: 'mypinterest'
 youtube: 'myyoutube'
-github-user: 'mygithub'
+github-user: 'https://github.com/wj576038874'
 #gitlab-user: ''
 #codepen: ''
 #steam: ''
