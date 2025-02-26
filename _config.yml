@@ -34,9 +34,9 @@ vk: 'myvk'
 blog_url: 'csdn576038874?type=blog'
 email: 'wenjie940409@gmail.com'
 messenger: 'myfbchat'
-jianshu: 'u/64e2d0feed09'
+book: 'u/64e2d0feed09'
 
-social-links-order: [github-user, blog_url, jianshu, facebook, twitter, email]
+social-links-order: [github-user, blog_url, book, facebook, twitter, email]
 # social-links-order: [github-user, blog_url, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, email]
 
 # Yaml manifest of supported social links
@@ -59,7 +59,7 @@ social-links-order: [github-user, blog_url, jianshu, facebook, twitter, email]
 #     - defaults to `fab` style and uses value of `name` attribute (e.g. fab fa-2x fa-twitter)
 #     - **optional**
 social-links:
-  - name: jianshu
+  - name: book
     url-pattern: www.jianshu.com/__USERNAME__
     icon-class: fa-solid fa-book
 
