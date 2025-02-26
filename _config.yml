@@ -13,6 +13,8 @@ favicon: 'favicon.ico'
 # Online profiles
 #dribbble: 'mydribbble'
 facebook: '100042492350695'
+csdn: 'csdn576038874?type=blog'
+jianshu: 'u/64e2d0feed09'
 twitter: 'wenjie64938735'
 #linkedin: 'mylinkedin'
 instagram: 'wenjie940409'
@@ -35,7 +37,8 @@ blog_url: 'myblog.blog.com'
 email: 'wenjie940409@gmail.com'
 messenger: 'myfbchat'
 
-social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, blog_url, email]
+social-links-order: [github-user, blog_url, jianshu, facebook, twitter, email]
+# social-links-order: [github-user, csdn, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, blog_url, email]
 
 # Yaml manifest of supported social links
 # Requirements:
@@ -57,6 +60,10 @@ social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinteres
 #     - defaults to `fab` style and uses value of `name` attribute (e.g. fab fa-2x fa-twitter)
 #     - **optional**
 social-links:
+  - name: jianshu
+    url-pattern: https://www.jianshu.com/__USERNAME__
+    icon-class: fab fa-2x fa-book
+
   - name: facebook
     url-pattern: facebook.com/__USERNAME__
     icon-class: fab fa-2x fa-facebook-f
@@ -147,7 +154,7 @@ social-links:
     url-pattern: www.quora.com/profile/__USERNAME__
 
   - name: blog_url
-    url-pattern: '__USERNAME__'
+    url-pattern: https://blog.csdn.net/__USERNAME__
     icon-class: fas fa-2x fa-blog
 
   - name: email
