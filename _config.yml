@@ -2,8 +2,8 @@
 remote_theme: epidrome/cover-card@main
 
 # Title and tag line
-title: 'wychen'
-description: 'I am wenjie.'
+title: 'wen'
+description: 'Learning has no boundaries.'
 
 # Images
 avatar: 'avatar.jpg'
@@ -61,7 +61,7 @@ social-links-order: [github-user, blog_url, jianshu, facebook, twitter, email]
 social-links:
   - name: jianshu
     url-pattern: www.jianshu.com/__USERNAME__
-    icon-class: fab fa-2x fa-book
+    icon-class: fab fa-2x fa-book-open
 
   - name: facebook
     url-pattern: facebook.com/__USERNAME__
