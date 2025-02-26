@@ -60,7 +60,7 @@ social-links-order: [github-user, blog_url, jianshu, facebook, twitter, email]
 #     - **optional**
 social-links:
   - name: jianshu
-    url-pattern: https://www.jianshu.com/__USERNAME__
+    url-pattern: www.jianshu.com/__USERNAME__
     icon-class: fab fa-2x fa-book
 
   - name: facebook
@@ -153,7 +153,7 @@ social-links:
     url-pattern: www.quora.com/profile/__USERNAME__
 
   - name: blog_url
-    url-pattern: https://blog.csdn.net/__USERNAME__
+    url-pattern: blog.csdn.net/__USERNAME__
     icon-class: fas fa-2x fa-blog
 
   - name: email
