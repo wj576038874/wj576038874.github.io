@@ -1,6 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* 基础样式 */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background-color: #2c3e50;
+            padding: 1rem;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        /* 主要内容区域 */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* 个人简介卡片 */
+        .profile {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* 项目展示网格 */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .project-card {
+            flex: 1 1 300px;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* 联系方式 */
+        .contact {
+            background: #3498db;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
 <body>
-<div color="#ff00ff">这是我使用github pages搭建的个人站点。</div>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <a href="#home">主页</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+    </nav>
+
+    <!-- 个人简介 -->
+    <div class="container">
+        <section class="profile">
+            <h1>你好，我是[你的名字]</h1>
+            <p>前端开发者 | 技术爱好者</p>
+            <p>这里写一段个人简介，描述你的技能、兴趣或职业方向。</p>
+        </section>
+
+        <!-- 项目展示 -->
+        <h2 id="projects">我的项目</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>项目一</h3>
+                <p>项目描述文字，说明技术栈和成果。</p>
+                <img src="placeholder.jpg" alt="项目预览" style="width:100%">
+            </div>
+            <!-- 复制更多项目卡片 -->
+        </div>
+
+        <!-- 联系方式 -->
+        <section class="contact" id="contact">
+            <h2>联系我</h2>
+            <p>邮箱：yourname@example.com</p>
+            <p>GitHub：github.com/yourusername</p>
+        </section>
+    </div>
 </body>
 </html>
