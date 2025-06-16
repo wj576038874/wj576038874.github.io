@@ -62,7 +62,7 @@ social-links-order: [github-user, blog_url, book, email]
 social-links:
   - name: book
     url-pattern: www.jianshu.com/__USERNAME__
-    icon-class: fab fa-2x fa-facebook-f
+    icon-class: fas fa-2x fa-book
 
   - name: facebook
     url-pattern: facebook.com/__USERNAME__
