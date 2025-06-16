@@ -5,14 +5,11 @@ remote_theme: epidrome/cover-card@main
 title: ''
 description: 'Learning has no boundaries.'
 
-# 添加自定义 CSS
-head_extra: |
-  <style>
-    .cover-description {
-      color: #000 !important;
-      text-shadow: none !important;
-    }
-  </style>
+@media (max-width: 768px) {
+  .cover-description {
+    color: #000 !important;
+  }
+}
 
 # Images
 avatar: 'avatar.jpg'
