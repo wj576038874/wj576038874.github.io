@@ -5,12 +5,6 @@ remote_theme: epidrome/cover-card@main
 title: ''
 description: 'Learning has no boundaries.'
 
-@media (max-width: 768px) {
-  .cover-description {
-    color: #000 !important;
-  }
-}
-
 # Images
 avatar: 'avatar.jpg'
 background: 'background.jpg'
@@ -68,7 +62,7 @@ social-links-order: [github-user, blog_url, book, email]
 social-links:
   - name: book
     url-pattern: www.jianshu.com/__USERNAME__
-    icon-class: fas fa-2x fa-book
+    icon-class: fab fa-2x fa-facebook-f
 
   - name: facebook
     url-pattern: facebook.com/__USERNAME__
